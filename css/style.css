@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap');
+
+* {
+    box-sizing: border-box; /* width and height don't include padding and border */
+}
+body {
+    background-color: #FFE4C4;
+    font-family: 'Roboto', sans-serif; /* sets font family for entire page */
+    display: flex; /* sets flexible length on flexible items */
+    align-items: center; /* sets vertical alignment for items inside a flexbox or grid container */
+    justify-content: center; /* sets horizontal alignment for items for items inside a flexbox or grid container */
+    height: 100vh; /* 100% of viewport's height */
+    overflow: hidden; /* sets content hidden if content overflows an element's box */
+    margin: 10; /* default 10*/
+}
+img {
+    max-width: 100%;
+}
+.card {
+    box-shadow: 0 2px 10px #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+}
+.card-header {
+    height: 200px;
+}
+.card-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card-content {
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.card-title {
+    height: 20px;
+    margin: 0;
+}
+.card-excerpt {
+    color: #000000;
+    margin: 10px 0 20px;
+}
+.author {
+    display: flex;
+}
+.profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+}
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 100px;
+}
+.author-info small {
+    color: #AAAAAA;
+    margin-top: 5px;
+}
+.animated-bg {
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: -150% 0;
+    }
+}
